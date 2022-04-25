@@ -1,11 +1,11 @@
-function result = taylor(x)
+function result = taylor_e(x)
 y=0;
 z = 0;
-dividend = x.^z;
+dividend = x^z;
 divisor = my_factorial(z);
 item = dividend/divisor;
-while item > 1/1000000
-    dividend = x.^z;
+while item >10^(-6)
+    dividend = x^z;
     divisor = factorial(z);
     item = dividend/divisor;
     y = y+item;
