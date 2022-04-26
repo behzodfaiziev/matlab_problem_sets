@@ -1,5 +1,5 @@
 function y = my_factorial(x)
-while x<0
+while length(x)~= 1 || x<0
  x = input("Enter a valid number: ");
 end
 
