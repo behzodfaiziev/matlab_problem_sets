@@ -1,16 +1,12 @@
 function e_commerce()
 x  = input("Enter the cost of an item: ");
-total = x;
+total = 0;
 while x~= 0
-x  = input("Enter the cost of an item: ");
-total = total+x;
+  total = total+x;
+  x  = input("Enter the cost of an item: ");
 end
 fprintf("Total: %0.2f \n",total);
-
 y  = input("Enter the payment: ");
-
-fprintf("Change due: %0.2f \n",total-y);
-
-
-
+change = total-y;
+fprintf("Change: %1.2f \n",change);
 end
