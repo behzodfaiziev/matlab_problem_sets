@@ -11,12 +11,8 @@ while item >10^(-6)
    divisor = factorial(z);
    item =dividend/divisor;
    y = y+ ((-1).^i)*item;
-      
    i = i+1;
    z = z+2;
-   disp(z)
-    disp(i)
-     disp(" ")
 end
 result = y;
 end
